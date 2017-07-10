@@ -61,7 +61,9 @@ class PortfoliosController < ApplicationController
     end
   end
   
-  private def portfolio_params #uhhhhhhh
+  private
+  
+  def portfolio_params
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
