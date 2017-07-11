@@ -6,4 +6,10 @@ class ApplicationController < ActionController::Base
   def current_user
     super || OpenStruct.new(name: "Guest User", first_name: "Guest", last_name: "User", email: "guest@user.org") 
   end
+  
+  before_filter :set_title
+  
+  def set_title
+    @page_title = "Cristian Becerril | My Portfolio - Devcamp"
+  end
 end
