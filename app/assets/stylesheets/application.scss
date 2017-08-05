@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 50rem;
+    width: 65rem;
   }
 }
 
@@ -202,4 +202,17 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('home.jpg') no-repeat;
   background-size: cover;
+}
+
+.tech-news {
+  color: black;
+  margin: 20 px;
+}
+
+.tech-news a {
+  color: orange;
+}
+
+.tech-news > .card {
+  padding: 30px;
 }
