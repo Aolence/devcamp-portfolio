@@ -1,7 +1,5 @@
 module PagesHelper
   def twitter_parser tweet
-    tweet = "user_Example: blablahbalh https://google.com. dfjhdsjfhg heartsigngngn #rails"
-    
      regex = %r{
       \b
       (
