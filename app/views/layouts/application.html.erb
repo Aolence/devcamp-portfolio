@@ -17,7 +17,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          
+          <!--if current_page/page.active != Tech_news-->
           <%= video_tag(
             'Sunset-Lapse.mp4',
             id: 'background',
@@ -27,6 +27,8 @@
             poster: 'Sunset-Lapse.jpg'
           )
           %>
+          <!--else-->
+          <!--coding background-->
           
           <%= render "shared/application_nav" %>
           
