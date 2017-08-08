@@ -3,7 +3,7 @@
     <%= image_tag "placeholder.gif", width: 300, alt: "Profile Image" %>
     
     <div class="skills">
-      <%= @skills.each do |skill| %>
+      <% @skills.each do |skill| %>
         <div class="skill">
           <h4><%= skill.title %></h4>
           <div class="progress">
@@ -13,8 +13,7 @@
               aria-valuenow="<%= skill.percent_utilized %>"
               aria-valuemax="100"
               style="width: <%= skill.percent_utilized %>%"
-            >
-            </div>
+            ></div>
           </div>
         </div>
       <% end %>
@@ -42,7 +41,7 @@
       </button>
       
       <button
-        class="btn btn-success"
+        class="btn btn-secondary"
         type="button"
         data-toggle="collapse"
         data-target="#education"
