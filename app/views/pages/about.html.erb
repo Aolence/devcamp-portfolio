@@ -11,5 +11,55 @@
     <p></p>Pants are superior.</p>
     <%= link_to "My Blog", blogs_path, class: 'btn btn-primary' %>
     <%= link_to "My Portfolio", portfolios_path, class: 'btn btn-secondary' %>
+
+      <button
+        class="btn btn-info"
+        type="button"
+        data-toggle="collapse"
+        data-target="#jobHistory"
+        aria-expanded="false"
+        aria-controller"jobHistory"
+      >
+        Job History
+      </button>
+      
+      <button
+        class="btn btn-success"
+        type="button"
+        data-toggle="collapse"
+        data-target="#education"
+        aria-expanded="false"
+        aria-controller"education"
+      >
+        Education
+      </button>
+      
+      <div class="collapse" id="jobHistory">
+        <div class="card card-block">
+          Lawn Mowing
+        </div>
+        <div class="card card-block">
+          Personal Game Projects (Lua and C++)
+        </div>
+      </div>
+      
+      <div class="collapse" id="education">
+        <div class="card card-block">
+          Java
+        </div>
+        <div class="card card-block">
+          Lua
+        </div>
+        <div class="card card-block">
+          Ruby
+        </div>
+        <div class="card card-block">
+          Rails
+        </div>
+        <div class="card card-block">
+          C++
+        </div>
+      </div>
+    </div>
   </div>
 </div>
