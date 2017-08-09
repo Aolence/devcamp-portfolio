@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20170805201558) do
   create_table "skills", force: :cascade do |t|
     t.string   "title"
     t.integer  "percent_utilized"
+    t.string   "progress_bar_type"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.text     "badge"

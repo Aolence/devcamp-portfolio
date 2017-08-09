@@ -16,10 +16,41 @@ end
 
 puts "Success"
 
-5.times do |skill|
+def languages
+[
+  {
+    language: "Ruby",
+    percent_utilized: 0,
+    progress_bar_type: "danger"
+  },
+  {
+    language: "Rails",
+    percent_utilized: 0,
+    progress_bar_type: "warning"
+  },
+  {
+    language: "Lua",
+    percent_utilized: 0,
+    progress_bar_type: "primary"
+  },
+  {
+    language: "Java",
+    percent_utilized: 0,
+    progress_bar_type: "success"
+  },
+  {
+    language: "C++",
+    percent_utilized: 0,
+    progress_bar_type: "info"
+  },
+]
+end
+
+languages.each do |skill|
   Skill.create!(
-    title: "Rails #{skill}",
-    percent_utilized: 15
+    title: "#{skill[:language]}",
+    percent_utilized: "#{skill[:percent_utilized]}",
+    progress_bar_type: "#{skill[:progress_bar_type]}"
   )
 end
 
